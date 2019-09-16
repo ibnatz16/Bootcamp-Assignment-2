@@ -26,6 +26,8 @@ var removeCable = function() {
     if(err) throw err;
     console.log(listing);
   });
+  Listing.findOneAndRemove({'code': 'CABL'}, function (err,listing){
+      if(err) throw err;
 };
 var updatePhelpsMemorial = function() {
   /*
